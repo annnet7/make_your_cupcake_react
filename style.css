@@ -134,7 +134,7 @@ body {
 .textContainer h1 {
   font-family: "Bebas Neue", cursive;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 90px;
   line-height: 80px;
   color: #fd5e98;
@@ -159,4 +159,71 @@ body {
   line-height: 23px;
   text-transform: uppercase;
   color: #ffffff;
+}
+.mobileTopImg {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .leftcol {
+    display: none;
+  }
+  .rightcol {
+    width: 100%;
+    flex-basis: 100%;
+    align-content: stretch;
+    padding: 19px;
+  }
+  .content {
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
+    border-radius: 0;
+    box-sizing: border-box;
+  }
+  .mobileTopImg {
+    display: block;
+    background-image: url(./assets/mobile_img.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 337px;
+    height: 384px;
+    max-width: 98%;
+    box-sizing: border-box;
+    min-height: 384px;
+    filter: drop-shadow(0px 4px 30px rgba(192, 127, 147, 0.54));
+    margin-top: 13px;
+    margin-bottom: 25px;
+  }
+  .textContainer {
+    height: fit-content;
+    justify-self: unset;
+    align-items: center;
+  }
+  .textContainer h1 {
+    font-size: 60px;
+    line-height: 50px;
+    max-width: 337px;
+  }
+  #buttonToStart {
+    width: 316px;
+    max-width: 95%;
+    height: 43px;
+    padding: 8px;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 400;
+  }
+  .footer {
+    justify-self: unset;
+    margin-top: 20px;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .footer .contacts {
+    align-self: center;
+    margin-top: 20px;
+  }
 }
