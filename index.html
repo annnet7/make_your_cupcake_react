@@ -7,16 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make your own cupcake</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="main.js"></script>
 </head>
 
 <body>
     <div class="wrap">
         <div class="content row">
             <!-- left image -->
-            <div class="leftcol"></div>
+            <div class="leftcol" id="leftCol">
+                <div class="reactBlock cakeImage">
+                    <img src="assets/cakes/shadow.png" alt="shadow">
+                    <img src="assets/cakes/cake1.png" alt="base">
+                    <img src="assets/cakes/top1.png" alt="toping">
+                </div>
+            </div>
 
             <!-- main content -->
-            <div class="rightcol col">
+            <div class="rightcol col" id='rightCol'>
                 <!-- top row -->
                 <div class="navigation row">
                     <img src="assets/logo.svg" alt="logo">
@@ -29,7 +37,7 @@
 
                 <div class="textContainer col">
                     <div class="mobileTopImg"></div>
-                    <h1> Make your own cupcake </h1>
+                    <h1 id="header"> Make your own cupcake </h1>
                     <button id="buttonToStart">
                         Start to сollect your favorite flavor
                     </button>
