@@ -29,4 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(cakeArray);
     console.log(topingArray);
 
+    let cakeSelect = document.getElementById('cakeSelect');
+    let topSelect = document.getElementById('topSelect');
+
+    cakeArray.map(function(el){
+       return cakeSelect.innerHTML+='<option value='+el.id+'>'+el.nameText+'</option>';
+    })
+    topingArray.map(function(el){
+        return topSelect.innerHTML+='<option value='+el.id+'>'+el.nameText+'</option>';
+    })
+
 });
